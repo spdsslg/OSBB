@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/OSBB/static/css/main.b6b877bc.css",
+    "main.js": "/OSBB/static/js/main.3c39d0c5.js",
+    "static/js/453.419a5d54.chunk.js": "/OSBB/static/js/453.419a5d54.chunk.js",
+    "static/media/Vinnytsia3.png": "/OSBB/static/media/Vinnytsia3.8445a6ebac4229ba12c3.png",
+    "static/media/PTSans-Bold.ttf": "/OSBB/static/media/PTSans-Bold.610bc32a7e32c292ce59.ttf",
+    "static/media/PTSans-Regular.ttf": "/OSBB/static/media/PTSans-Regular.77e92507394e2309d837.ttf",
+    "static/media/PTSans-Italic.ttf": "/OSBB/static/media/PTSans-Italic.4faac24b7809d950b77e.ttf",
+    "static/media/Vinnytsia2.jpg": "/OSBB/static/media/Vinnytsia2.bad7651f417ff6aebbca.jpg",
+    "static/media/PTSans-BoldItalic.ttf": "/OSBB/static/media/PTSans-BoldItalic.9432b29338612af7eca9.ttf",
+    "static/media/PlayfairDisplay-SemiBold.ttf": "/OSBB/static/media/PlayfairDisplay-SemiBold.998e0c55848f5a03cdeb.ttf",
+    "static/media/PlayfairDisplay-Medium.ttf": "/OSBB/static/media/PlayfairDisplay-Medium.8aa05b9c598ac2a736d9.ttf",
+    "static/media/PlayfairDisplay-Bold.ttf": "/OSBB/static/media/PlayfairDisplay-Bold.a44ebc27b80d88dc868d.ttf",
+    "static/media/PlayfairDisplay-ExtraBold.ttf": "/OSBB/static/media/PlayfairDisplay-ExtraBold.1d9c0be538cd21b09d1f.ttf",
+    "static/media/PlayfairDisplay-Black.ttf": "/OSBB/static/media/PlayfairDisplay-Black.9838940b9aee7af3976b.ttf",
+    "static/media/PlayfairDisplay-Regular.ttf": "/OSBB/static/media/PlayfairDisplay-Regular.693728812dc43ab34710.ttf",
+    "static/media/PlayfairDisplay-SemiBoldItalic.ttf": "/OSBB/static/media/PlayfairDisplay-SemiBoldItalic.74a89df05fde1a3a6b3c.ttf",
+    "static/media/PlayfairDisplay-ExtraBoldItalic.ttf": "/OSBB/static/media/PlayfairDisplay-ExtraBoldItalic.e6d7dec5018cd937cc7d.ttf",
+    "static/media/PlayfairDisplay-MediumItalic.ttf": "/OSBB/static/media/PlayfairDisplay-MediumItalic.8a8a4356b4d001468b59.ttf",
+    "static/media/PlayfairDisplay-Italic.ttf": "/OSBB/static/media/PlayfairDisplay-Italic.a5b813a9539a87133d85.ttf",
+    "static/media/PlayfairDisplay-BlackItalic.ttf": "/OSBB/static/media/PlayfairDisplay-BlackItalic.5be14b5de91fdd10f4be.ttf",
+    "static/media/Vinnytsia1.png": "/OSBB/static/media/Vinnytsia1.e0c848c1050be4990663.png",
+    "static/media/wave1.svg": "/OSBB/static/media/wave1.542b05f803f8bdb693587529afa26604.svg",
+    "static/media/clock.png": "/OSBB/static/media/clock.45b0736b20ad251e6cdb.png",
+    "static/media/VinMegapolis.svg": "/OSBB/static/media/VinMegapolis.3abb262ebc1db9a82265a8102d95e6e7.svg",
+    "static/media/slick.svg": "/OSBB/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/OSBB/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/OSBB/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/OSBB/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/OSBB/index.html",
+    "main.b6b877bc.css.map": "/OSBB/static/css/main.b6b877bc.css.map",
+    "main.3c39d0c5.js.map": "/OSBB/static/js/main.3c39d0c5.js.map",
+    "453.419a5d54.chunk.js.map": "/OSBB/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6b877bc.css",
+    "static/js/main.3c39d0c5.js"
+  ]
+}
