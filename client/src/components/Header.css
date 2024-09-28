@@ -1,0 +1,284 @@
+/* Базовые стили */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  padding-bottom: 10px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Секция логотипа и навигации на одном уровне */
+.header-left, .header-nav, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .logo {
+  margin-left: 20px;
+  width: 250px; /* Размер логотипа для десктопа */
+  height: auto;
+}
+
+.header-left a {
+  display: block;
+}
+
+/* Навигация по центру */
+.header-nav {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ссылки в навигации */
+.header-nav a {
+  color: var(--text-color);
+  margin: 0 30px;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.header-nav a:hover {
+  color: var(--border-color);
+}
+
+.header-right {
+  margin-right: 50px;
+  display: flex; /* Добавлено для центрирования кнопки */
+  align-items: center; /* Центрирование по вертикали */
+}
+
+.header-right button {
+  padding: 10px 20px;
+  margin-top: 0px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-right button:hover {
+  background-color: #007bff;
+}
+
+/* Сдвиг контента */
+.main-content {
+  transition: margin-top 0.3s ease;
+}
+
+.main-content.shifted {
+  margin-top: 200px; /* Высота меню */
+}
+
+/* Бургер-меню только на мобильных */
+.burger-menu {
+  display: none; /* По умолчанию скрыто */
+}
+
+@media (max-width: 1024px) {
+  .burger-menu {
+    display: none; /* Скрываем бургер-меню на устройствах с шириной меньше 1024px */
+  }
+
+  .header-nav {
+    display: flex; /* Показываем навигацию в ряд */
+    justify-content: center; /* Центруем навигацию */
+  }
+
+  .header-nav a {
+    margin: 0 15px; /* Уменьшаем отступы между ссылками */
+    font-size: 20px; /* Уменьшаем размер шрифта, если необходимо */
+  }
+}
+
+/* Скрываем бургер-меню на экранах больше 767px */
+@media (max-width: 767px) {
+  header {
+    height: 90px; /* Увеличиваем высоту хедера */
+    padding: 15px 15px; /* Увеличиваем отступы внутри хедера */
+    justify-content: space-between; /* Сохраняем распределение логотипа и кнопки */
+  }
+  
+  .header-left .logo {
+    width: 170px; /* Размер логотипа для мобильных устройств */
+  }
+
+  .header-nav {
+    display: none; /* Скрываем навигацию */
+  }
+
+  .header-right button {
+    padding: 9px 25px; /* Увеличиваем ширину кнопки */
+    font-size: 14px; /* Уменьшаем размер шрифта кнопки */
+  }
+
+  .header-left, .header-right {
+    display: flex; /* Используем flex для распределения элементов */
+    align-items: center; /* Центрируем по вертикали */
+  }
+
+  .header-left {
+    margin-left: -20px; /* Увеличиваем отступы для логотипа */
+  }
+
+  .header-right {
+    margin-right: -4px; /* Увеличиваем отступы для кнопки */
+  }
+
+  .burger-menu {
+    display: flex; /* Включаем бургер-меню только на мобильных */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-left:-5px;
+  }
+
+  .burger-menu span {
+    display: block;
+    width: 100%;
+    height: 4px; /* Увеличиваем толщину полос бургер-меню */
+    background-color: var(--text-color);
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+
+  /* Открытое бургер-меню */
+  .burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(10px); /* Выравнивание первой палочки */
+  }
+
+  .burger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-9px); /* Выравнивание третьей палочки */
+  }
+
+  /* Открываем навигацию в мобильной версии */
+  .header-nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Увеличиваем отступ от верхней части для выпадающего меню */
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    z-index: 50;
+    box-shadow: none;
+  }
+
+  .header-nav a {
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 18px; /* Уменьшение размера шрифта навигации во всплывающем меню */
+  }
+}
+
+@media (max-width: 399px) {
+  header {
+    height: 70px; /* Увеличиваем высоту хедера для очень узких экранов */
+    padding: 15px 10px; /* Увеличиваем отступы внутри хедера */
+    justify-content: space-between; /* Сохраняем распределение логотипа и кнопки */
+  }
+
+  .header-left .logo {
+    width: 150px; /* Уменьшаем размер логотипа для очень узких экранов */
+  }
+
+  .header-nav {
+    display: none; /* Скрываем навигацию */
+  }
+
+  .header-right button {
+    padding: 9px 17px; /* Увеличение ширины кнопки */
+    font-size: 12px; /* Уменьшаем размер шрифта кнопки */
+  }
+
+  .header-left, .header-right {
+    display: flex; /* Используем flex для распределения элементов */
+    align-items: center; /* Центрируем по вертикали */
+  }
+
+  .header-left {
+    margin-right: 15px; /* Увеличиваем отступы для логотипа */
+  }
+
+  .header-right {
+    margin-right: 4px; /* Увеличиваем отступы для кнопки */
+  }
+
+  .burger-menu {
+    display: flex; /* Включаем бургер-меню только на мобильных */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-left:-15px;
+  }
+
+  .burger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-color);
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+
+  /* Открытое бургер-меню */
+  .burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(10px); /* Выравнивание первой палочки */
+  }
+
+  .burger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-9px); /* Выравнивание третьей палочки */
+  }
+
+  /* Открываем навигацию в мобильной версии */
+  .header-nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Увеличиваем отступ от верхней части для выпадающего меню */
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    z-index: 50;
+    box-shadow: none;
+  }
+
+  .header-nav a {
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 18px; /* Уменьшение размера шрифта навигации во всплывающем меню */
+  }
+}
+
+
+

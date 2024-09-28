@@ -1,0 +1,106 @@
+.templates-wrapper {
+  margin-top: 80px;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.templates-header {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.templates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.templates-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Выравниваем текст и кнопку по сторонам */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.templates-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.templates-info {
+  flex-grow: 1; /* Заполняет оставшееся пространство для текста */
+  display: flex;
+  justify-content: space-between; /* Для распределения текста и кнопки */
+  align-items: center; /* Выравниваем по вертикали */
+}
+
+.templates-text {
+  font-size: 18px;
+  color: #333;
+  flex-grow: 1; /* Занимает всю доступную ширину */
+  margin-right: 20px; /* Отступ между текстом и кнопкой */
+}
+
+.templates-link {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Для планшетов и мобильных устройств */
+@media (max-width: 1024px) {
+  .templates-item {
+      flex-direction: column; /* На мобильных и планшетах иконка, текст и кнопка будут в колонку */
+      align-items: flex-start; /* Выравнивание по левому краю */
+  }
+
+  .templates-info {
+      flex-direction: column; /* Вертикальная ориентация */
+      align-items: flex-start;
+  }
+
+  .templates-link {
+      margin-top: 10px; /* Добавляем отступ сверху для кнопки на мобильных */
+  }
+}
+
+@media (max-width: 767px) {
+  .templates-wrapper {
+      padding: 20px;
+      margin-top:65px;
+  }
+
+  .templates-header {
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+
+  .templates-item {
+      padding: 10px;
+      max-width: 95%;
+  }
+
+  .templates-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+  }
+
+  .templates-text {
+      font-size: 14px;
+  }
+
+  .templates-link {
+      font-size: 14px;
+  }
+}

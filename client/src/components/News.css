@@ -1,0 +1,179 @@
+.news {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    font-family: var(--font-family-body);
+    text-align: center; /* Центрируем весь контент */
+    padding-top:50px;
+}
+
+.news h1{
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.news ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news li {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    max-width: 1000px; 
+    width: 100%; 
+    padding: 40px; 
+    margin: 20px auto; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.news h2 {
+    color: var(--text-color);
+    font-family: var(--font-family-heading);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    word-wrap: break-word;     /* Переносит длинные слова на новую строку */
+    overflow-wrap: break-word; /* Также помогает с переносом */
+}
+
+
+.news p {
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-align: center; /* Центрируем текст */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+}
+
+.news img {
+    max-width: 60%; /* Размер картинки 60% */
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto; /* Центрируем изображение с отступами сверху и снизу */
+    display: block;
+}
+
+.news button {
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-family-body);
+}
+
+.news-link {
+    margin-top: 10px;
+}
+
+.news-link a {
+    color: var(--border-color);
+    text-decoration: none;
+    text-align: center; /* Центрируем ссылку */
+}
+
+.news-link a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 1170px) {
+    .news {
+      padding: 30px; /* Средний отступ для планшетов */
+      padding-top: 50px;
+    }
+  
+    .news li {
+      padding: 30px; /* Уменьшенные внутренние отступы для блока новостей */
+      max-width: 85%; /* Максимальная ширина блока 85% */
+    }
+  
+    .news h1 {
+      font-size: 28px; /* Небольшое уменьшение размера заголовка */
+      margin-bottom: 35px;
+    }
+  
+    .news h2 {
+      font-size: 1.4rem; /* Адаптируем размер заголовка */
+    }
+  
+    .news p {
+      font-size: 16px; /* Оптимальный размер текста для планшетов */
+      line-height: 1.5;
+    }
+  
+    .news img {
+      max-width: 70%; /* Уменьшаем изображение до 70% от ширины контейнера */
+    }
+  
+    .news button {
+      padding: 10px 18px; /* Чуть уменьшаем кнопку */
+    }
+  
+    .news-link a {
+      font-size: 15px; /* Чуть уменьшаем размер ссылки */
+    }
+  }
+
+@media (max-width: 768px) {
+    .news {
+        padding: 20px; /* Уменьшаем отступы */
+        padding-top:60px;
+    }
+
+    .news li {
+        padding: 20px; /* Уменьшаем внутренние отступы в блоках новостей */
+        max-width: 90%; /* Устанавливаем максимальную ширину на 90% экрана */
+    }
+
+    .news h1 {
+        font-size: 24px; /* Уменьшаем размер заголовка страницы */
+        margin-bottom: 30px;
+    }
+
+    .news h2 {
+        font-size: 1.2rem; /* Уменьшаем размер заголовков новостей */
+    }
+
+    .news p {
+        font-size: 15px; /* Уменьшаем размер текста */
+        line-height: 1.4; /* Немного уменьшаем межстрочный интервал */
+    }
+
+    .news img {
+        max-width: 80%; /* Увеличиваем изображение до 80% от ширины контейнера */
+    }
+
+    .news button {
+        padding: 8px 16px; /* Уменьшаем размер кнопки */
+    }
+}
+
+/* Медиа-запросы для устройств с шириной экрана до 480px (мобильные телефоны) */
+@media (max-width: 399px) {
+    .news{
+        padding-top:25px;
+    }
+    .news li {
+        padding: 15px; /* Ещё больше уменьшаем внутренние отступы */
+    }
+
+    .news h1 {
+        font-size: 20px; /* Ещё меньше заголовок страницы */
+        margin-bottom: 20px;
+    }
+
+    .news h2 {
+        font-size: 1rem; /* Уменьшаем заголовок новостей для мобильных устройств */
+    }
+
+    .news p {
+        font-size: 13px; /* Уменьшаем текст для телефонов */
+    }
+
+    .news img {
+        max-width: 100%; /* Картинки занимают всю ширину контейнера */
+    }
+}

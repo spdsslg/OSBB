@@ -1,0 +1,171 @@
+.cabinet {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 900px; /* Ограничиваем максимальную ширину div */
+    margin: 0 auto;
+    padding-top: 90px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .button-cabinet {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-cabinet:hover {
+    background-color: var(--hover-bg-color);
+  }
+  
+  .invoice {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    clear:both;
+  }
+  
+  .invoice-header {
+    margin-bottom: 20px;
+  }
+  
+  .invoice-header p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  /* Добавляем ограничение ширины таблицы и прокрутку */
+  .invoice-table-container {
+    max-width: 100%; /* Ограничение ширины контейнера таблицы */
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+  }
+  
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .invoice-table th, .invoice-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .invoice-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  .invoice-table td {
+    background-color: #fff;
+  }
+  
+  .total-payment {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  
+  
+/* Контейнер для текста и кнопки */
+.total-payment-container {
+  display: flex;
+  justify-content: space-between; /* Размещаем текст слева, кнопку справа */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.total-payment {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.privat24-button {
+  margin-top:0px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: solid black 0px;
+  transition: background-color 0.3s ease;
+}
+
+.privat24-button:hover {
+  background-color: #007bff;
+}
+
+/* Адаптация для телефонов и планшетов */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%; /* Уменьшаем ширину модального окна */
+    padding: 15px; /* Уменьшаем внутренние отступы */
+  }
+
+  .total-payment-container {
+    flex-direction: column; /* Упорядочиваем элементы вертикально */
+    align-items: flex-start; /* Выравниваем элементы по левому краю */
+  }
+
+  .total-payment {
+    font-size: 16px; /* Уменьшаем размер шрифта */
+    margin-bottom: 10px; /* Добавляем отступ между текстом и кнопкой */
+  }
+
+  .privat24-button {
+    width: 100%; /* Делаем кнопку широкой */
+    padding: 12px; /* Увеличиваем внутренние отступы */
+    text-align: center; /* Центрируем текст кнопки */
+  }
+}
+
+/* Адаптация для маленьких телефонов */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 80%; /* Ещё сильнее уменьшаем ширину для маленьких экранов */
+    padding: 10px; /* Уменьшаем отступы */
+  }
+
+  .total-payment {
+    font-size: 14px; /* Уменьшаем размер шрифта для маленьких телефонов */
+  }
+
+  .privat24-button {
+    padding: 10px; /* Делаем кнопку компактнее */
+  }
+}

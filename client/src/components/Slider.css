@@ -1,0 +1,154 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 684px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slider-content {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-image-container {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  z-index: 1;
+  transition: right 1.2s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+
+.slider-content.wave-delay .wave {
+  right: 0;
+}
+
+.slider-content.animating .wave {
+  right: -100%;
+}
+.slide-text {
+  margin-top:100px;
+  position: absolute; /* Измените позицию на absolute */
+  left: 75%; /* Устанавливаем отступ слева */
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+.slider-content.wave-delay .slide-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slider-content.animating .slide-text {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.slider-dots .dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--header-bg-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-dots .dot.active {
+  background-color: var(--accent-color);
+}
+
+.slider-button {
+  background-color: var(--accent-color); /* Основной цвет фона */
+  color: white; 
+  border-radius: 5px;
+  width: 120px; 
+  height: 50px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; /* Горизонтальное выравнивание текста */
+  font-size: 16px; /* Размер шрифта (по необходимости) */
+  border: none; /* Удаление границы (если есть) */
+  cursor: pointer; /* Курсор указателя при наведении */
+  transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+}
+
+.slider-button:hover {
+  background-color: var(--hover-bg-color); /* Цвет фона при наведении */
+}
+
+.slider-button-link {
+  display: inline-block; /* Позволяет кнопке занимать место как блочный элемент */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .slider {
+    height: 450px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    height: 400px;
+  }
+  .slide-text {
+    font-size: 12px; /* Уменьшаем размер текста */
+    left: 70%; /* Корректируем позицию текста */
+    margin-top: 50px; /* Уменьшаем верхний отступ */
+  }
+
+  .slider-button {
+    width: 90px; /* Уменьшаем ширину кнопки */
+    height: 40px; /* Уменьшаем высоту кнопки */
+    font-size: 12px; /* Уменьшаем размер шрифта кнопки */
+  }
+}
+@media (max-width: 767px) {
+  .slider {
+    height: 350px;
+  }
+}

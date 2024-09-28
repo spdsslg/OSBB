@@ -1,0 +1,176 @@
+:root {
+--primary-color: #2a4b9b; /*logo blue*/
+--secondary-color: #FCFCFC; /* Crystal Clear */
+--accent-color: #73ba69; /* Mocha Brown */
+--text-color: #000000; 
+--border-color:  #007bff; /* Pearl Haze */
+--header-bg-color: #FCFCFC; /* Crystal Clear */
+--button-text-color: #FCFCFC; /* Crystal Clear */
+--hover-bg-color:#b8d7a2; /* Mocha Brown */
+--font-family-heading: 'Libre Caslon', serif;
+--font-family-body: 'Open Sans', sans-serif;
+  }
+  @font-face {
+    font-family: 'PT Sans';
+    src: url('./fonts/PTSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans Bold';
+    src: url('./fonts/PTSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans Italic';
+    src: url('./fonts/PTSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans Bold Italic';
+    src: url('./fonts/PTSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'PD Display Black Italic';
+    src: url('./fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PD ExtraBold Italic';
+    src: url('./fonts/PlayfairDisplay-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PD ExtraBold';
+    src: url('./fonts/PlayfairDisplay-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PD Bold';
+    src: url('./fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PD Black';
+    src: url('./fonts/PlayfairDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PD Italic';
+    src: url('./fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PD Medium';
+    src: url('./fonts/PlayfairDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PD Medium Italic';
+    src: url('./fonts/PlayfairDisplay-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PD Regular';
+    src: url('./fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PD SemiBold';
+    src: url('./fonts/PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PD SemiBold Italic';
+    src: url('./fonts/PlayfairDisplay-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+  body {
+    font-family: var(--font-family-body);
+    color: var(--primary-color);
+    background-color:rgb(243, 243, 243) ;
+  }
+  header nav a {
+    color: var(--primary-color);
+    font-family: var(--font-family-heading);
+  }
+  
+  .slider-arrow {
+    background: rgba(10, 10, 10, 0.5); /* Полупрозрачный фон Black Silk */
+    color: var(--button-text-color);
+  }
+  
+  .right-section h2 {
+    font-family: var(--font-family-heading);
+    color: var(--primary-color);
+  }
+  
+  .right-section p {
+    font-family: var(--font-family-body);
+    color: var(--text-color);
+  }
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+  
+  /* Анимация для слайдера */
+  .slider-enter {
+    transform: translateX(100%);
+  }
+  
+  .slider-enter-active {
+    transform: translateX(0);
+    transition: transform 300ms;
+  }
+  
+  .slider-exit {
+    transform: translateX(0);
+  }
+  
+  .slider-exit-active {
+    transform: translateX(-100%);
+    transition: transform 300ms;
+  }
+  

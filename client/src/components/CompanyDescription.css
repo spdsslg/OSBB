@@ -1,0 +1,131 @@
+.company-description {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.company-description h2 {
+    font-size: 2em;
+    margin-bottom: 40px; /* Adjusted for better spacing */
+    color: #333;
+}
+
+.company-features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: flex-start;
+}
+
+.feature {
+    width: 30%;
+    text-align: center; /* Centers the text inside each feature */
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    color: #1a1a1a;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.feature h3::after {
+    content: '';
+    display: block;
+    width: 50px; /* Adjust the width to match the stripe size */
+    height: 3px; /* Adjust the height to match the stripe thickness */
+    background-color: var(--accent-color);
+    margin: 5px auto 0;
+}
+
+
+.feature p {
+    font-size: 1em;
+    color: #6c6c6c;
+    margin-top: 20px; /* Adds more space between the <p> elements */
+}
+
+.go-to-cabinet {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.go-to-cabinet:hover {
+    background-color: var(--border-color);
+}
+@media (max-width: 1024px) {
+    .company-description h2 {
+      font-size: 1.8em; /* Уменьшаем заголовок для планшетов */
+    }
+  
+    .feature h3 {
+      font-size: 1.3em; /* Уменьшаем заголовки секций */
+    }
+  
+    .feature p {
+      font-size: 0.9em; /* Уменьшаем основной текст */
+    }
+  
+    .go-to-cabinet {
+      font-size: 0.9em; /* Уменьшаем текст кнопки */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .company-description {
+      padding: 30px; /* Уменьшаем отступы на мобильных */
+    }
+  
+    .company-description h2 {
+      font-size: 1.5em; /* Уменьшаем заголовок для мобильных устройств */
+    }
+  
+    .feature {
+      width: 100%; /* Выстраиваем блоки вертикально */
+      margin-bottom: 30px;
+    }
+  
+    .feature h3 {
+      font-size: 1.2em; /* Уменьшаем заголовки для мобильных */
+    }
+  
+    .feature p {
+      font-size: 0.8em; /* Уменьшаем основной текст */
+    }
+  
+    .go-to-cabinet {
+      font-size: 0.8em; /* Ещё больше уменьшаем текст кнопки */
+    }
+  }
+  
+  @media (max-width: 399px) {
+    .company-description {
+      padding: 20px; /* Уменьшаем отступы для очень узких экранов */
+    }
+  
+    .company-description h2 {
+      font-size: 1.2em; /* Уменьшаем заголовок для очень узких экранов */
+    }
+  
+    .feature h3 {
+      font-size: 1.1em; /* Уменьшаем заголовки секций */
+    }
+  
+    .feature p {
+      font-size: 0.7em; /* Уменьшаем основной текст */
+    }
+  
+    .go-to-cabinet {
+      font-size: 0.7em; /* Уменьшаем текст кнопки */
+      margin-top: 3px; /* Уменьшаем отступ сверху для кнопки */
+    }
+  }
+  
+  
